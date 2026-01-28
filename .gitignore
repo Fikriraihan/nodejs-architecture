@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+.pnpm/
+.pnpm-debug.log*
+.pnpm-store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Turbo cache
+turbo/
+.cache/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+*.sw?
+
+# Build outputs (adjust based on your project)
+dist/
+build/
+out/
+.next/
+.eslintcache
+coverage/
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# Optional: lockfile if not using it
+# pnpm-lock.yaml
+
+# Optional: compiled TypeScript
+**/*.tsbuildinfo
+
+.turbo/

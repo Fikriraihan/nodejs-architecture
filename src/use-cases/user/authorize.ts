@@ -1,7 +1,7 @@
 import { User } from '../../entities/index.js'
-import { IUserDAO } from '../../interfaces/user.js'
-import { IUseCase } from '../../interfaces/index.js'
-import { UnauthorizedError } from '../../errors/index.js'
+import { UnauthorizedError } from '../../errors/unauthorizedError.js';
+import type IUseCase from '../../interfaces/useCase.js';
+import type IUserDAO from '../../interfaces/user/userDAO.js';
 
 export default class AuthorizeUser implements IUseCase<User> {
     constructor(

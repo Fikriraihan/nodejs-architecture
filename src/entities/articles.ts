@@ -1,5 +1,5 @@
-import Entity from './entity';
-import User from './user.ts';
+import Entity from './entity.js';
+import User from './user.js';
 
 export default class Article extends Entity<Article> {
     id!: number;

@@ -1,7 +1,8 @@
-import { IUseCase, IValidator } from '../../interfaces';
-import { IUserDAO } from '../../interfaces/user';
 import { AuthUser, User } from '../../entities/index.js';
-import { ValidationError } from '../../errors/index.js';
+import { ValidationError } from '../../errors/validationError.js';
+import type IUseCase from '../../interfaces/useCase.js';
+import type IUserDAO from '../../interfaces/user/userDAO.js';
+import type IValidator from '../../interfaces/validator.js';
 
 export default class RegisterUser implements IUseCase<User> {
     constructor(

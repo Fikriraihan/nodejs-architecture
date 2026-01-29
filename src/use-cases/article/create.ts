@@ -1,7 +1,8 @@
 import { Article, User } from '../../entities/index.js';
-import { ValidationError } from '../../errors/index.js';
-import { IUseCase, IValidator } from '../../interfaces/index.js';
-import { IArticleDAO } from '../../interfaces/article.js';
+import { ValidationError } from '../../errors/validationError.js';
+import type IValidator from '../../interfaces/validator.js';
+import type IUseCase from '../../interfaces/useCase.js';
+import type IArticleDAO from '../../interfaces/article/articleDAO.js';
 
 export default class CreateArticle implements IUseCase<Article> {
     constructor(
